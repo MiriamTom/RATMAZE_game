@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.canvas.Canvas?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="540.0" prefWidth="960.0" styleClass="bodybg" stylesheets="@bgImage.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lab.logic.controllers.GameController">
+   <top>
+      <Pane prefHeight="94.0" prefWidth="960.0" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="81.0" fitWidth="402.0" layoutX="558.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@LOGO.jpg" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+   </top>
+   <right>
+      <Pane prefHeight="446.0" prefWidth="404.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button blendMode="EXCLUSION" layoutX="98.0" layoutY="128.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#playButton" prefHeight="68.0" prefWidth="238.0" text="PLAY">
+               <font>
+                  <Font size="29.0" />
+               </font>
+            </Button>
+            <Button blendMode="EXCLUSION" layoutX="98.0" layoutY="242.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#showScore" prefHeight="68.0" prefWidth="238.0" text="High Score">
+               <font>
+                  <Font size="21.0" />
+               </font>
+            </Button>
+            <CheckBox fx:id="music" layoutX="14.0" layoutY="405.0" mnemonicParsing="false" text="MUSIC" textFill="#d9b929">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </CheckBox>
+            <TextField fx:id="playerNameTextField" layoutX="143.0" layoutY="345.0" />
+         </children>
+      </Pane>
+   </right>
+   <bottom>
+      <Canvas fx:id="canvas" BorderPane.alignment="CENTER" />
+   </bottom>
+</BorderPane>

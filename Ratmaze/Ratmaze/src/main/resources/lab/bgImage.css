@@ -1,0 +1,5 @@
+/* CSS Document */
+.bodybg{
+    -fx-background-image: url('./../RATMAZE_menu.jpg');
+    -fx-background-size: 100% 100%; 
+}
